@@ -4,8 +4,8 @@ let cut = 0;
 
 
 function add() {
-    let name = prompt("Ingrese el nombre");
-    let money = prompt("Ingrese lo que gastó");
+    let name = $("#userName").val();
+    let money = $("#userMoney").val();
     cont += 1;
     distribute(name, money, cont);
     
