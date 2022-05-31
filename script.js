@@ -20,6 +20,6 @@ function distribute(person, spent, c) {
     $("#result").text("$" + suma);
 
     cut = suma / c;
-    $("#cut").text(parseFloat("$" + cut));
+    $("#cut").text("$" + (parseFloat(cut)));
 }
 
