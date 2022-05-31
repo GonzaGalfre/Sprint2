@@ -17,9 +17,9 @@ function add() {
 
 function distribute(person, spent, c) {
     suma += parseInt(spent); 
-    $("#result").text(suma);
+    $("#result").text("$" + suma);
 
     cut = suma / c;
-    $("#cut").text(parseFloat(cut));
+    $("#cut").text(parseFloat("$" + cut));
 }
 
