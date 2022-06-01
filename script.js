@@ -7,11 +7,11 @@ function add() {
     let name = $("#userName").val();
     let money = $("#userMoney").val();
     cont += 1;
-    
+
     distribute(name, money, cont);
 
     let nameToShow = `<h3> ${name} </h3>`
-    let moneyToShow = `<h3> ${money} </h3>`
+    let moneyToShow = `<h3> $ ${money} </h3>`
     
     $("#historyName").append(nameToShow);
     $("#historyMoney").append(moneyToShow);
