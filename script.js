@@ -10,8 +10,8 @@ function add() {
 
     distribute(name, money, cont);
 
-    let nameToShow = `<h3> ${name} </h3>`
-    let moneyToShow = `<h3> $ ${money} </h3>`
+    let nameToShow = `<h5> ${name}: </h5>`
+    let moneyToShow = `<h5> $ ${money} </h5>`
     
     $("#historyName").append(nameToShow);
     $("#historyMoney").append(moneyToShow);
@@ -22,6 +22,6 @@ function distribute(person, spent, c) {
     $("#result").text("$" + suma);
 
     cut = suma / c;
-    $("#cut").text("$" + (parseFloat(cut)));
+    $("#cut").text("$" + (Math.round(parseFloat(cut))));
 }
 
